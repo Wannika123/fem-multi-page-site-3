@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+  --White: #ffffff;
+  --Light-Coral: #f67e7e;
+  --Midnight-Green: #014e56;
+  --Rapture-Blue: #79c8c7;
+  --Police-Blue: #2c6269;
+  --Deep-Jungle-Green: #004047;
+  --Sacramento-State-Green: #012f34;
+  --Dark-Green: #002529;
+
+  --Fade-In-Animation: fade-in 0.3s;
+}
+
+body {
+  font-family: var(--font-livvic), Arial, Helvetica, sans-serif;
+  background-color: var(--Midnight-Green);
+  width: 100vw;
+  min-height: 100vh;
+}
+
+body:has(.mobile-menu) {
+  overflow: hidden;
+}
+
+.center {
+  width: 90%;
+  max-width: 69.375rem;
+  margin: 0 auto;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+@keyframes fade-in {
+  0% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
